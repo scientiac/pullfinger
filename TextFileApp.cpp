@@ -9,7 +9,7 @@ TextFileApp::TextFileApp() {
   // Create the main window
   window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
   gtk_window_set_title(GTK_WINDOW(window), "Finger Bookmarks");
-  gtk_window_set_default_size(GTK_WINDOW(window), 600, 400); // Set default size
+  gtk_window_set_default_size(GTK_WINDOW(window), 426, 240); // Set default size
   g_signal_connect(window, "destroy", G_CALLBACK(gtk_main_quit), NULL);
 
   gtk_container_set_border_width(GTK_CONTAINER(window), 10);
