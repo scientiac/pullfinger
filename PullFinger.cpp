@@ -137,7 +137,7 @@ public:
     scrolled_window = gtk_scrolled_window_new(NULL, NULL);
 
     // Configure window
-    gtk_window_set_title(GTK_WINDOW(window), "Finger GUI");
+    gtk_window_set_title(GTK_WINDOW(window), "Pullfinger");
     gtk_window_set_default_size(GTK_WINDOW(window), 600, 400);
     g_signal_connect(window, "destroy", G_CALLBACK(gtk_main_quit), NULL);
     gtk_container_set_border_width(GTK_CONTAINER(window), 10);
@@ -151,6 +151,12 @@ public:
     gtk_box_pack_start(GTK_BOX(vbox), scrolled_window, TRUE, TRUE, 0);
 
     gtk_container_add(GTK_CONTAINER(window), vbox);
+
+    // Create the bookmarks button
+    bookmarksButton = gtk_button_new_with_label("Bookmarks");
+    g_signal_connect(bookmarksButton, "clicked", G_CALLBACK(openBookmarks),
+                     this);
+    gtk_container_add(GTK_CONTAINER(vbox), bookmarksButton);
 
     // Connect callback for input entry activation
     g_signal_connect(input_entry, "activate", G_CALLBACK(input_entry_activated),
@@ -172,6 +178,7 @@ private:
   GtkWidget *input_entry;
   GtkWidget *response_label;
   GtkWidget *scrolled_window;
+  GtkWidget *bookmarksButton;
   FingerClient fingerClient;
 
   // Update the response label with text
@@ -207,19 +214,25 @@ private:
       return;
     }
 
-    // Fetch and update response if address is changed
+    // Fetch and update response if the address is changed
     if (app->fingerClient.getLastAddress() !=
         app->fingerClient.validateAndSetURL(input)) {
       std::string response = app->fingerClient.fetchFingerInfo();
       app->updateResponseLabel(response);
     }
   }
+
+  // Callback function for the bookmarks button
+  static void openBookmarks(GtkButton *button, gpointer data) {
+    // Open the TextFileApp window
+    TextFileApp textFileApp;
+    textFileApp.run();
+  }
 };
 
 // Main function
 int main(int argc, char *argv[]) {
   FingerApp app;
-  TextFileApp textFileApp;
   app.run();
   return 0;
 }

@@ -1,1 +1,1 @@
-g++ -o pullfinger pullfinger.cpp `pkg-config --cflags --libs gtk+-3.0`
+g++ -o pullfinger TextFileApp.cpp PullFinger.cpp `pkg-config --cflags --libs gtk+-3.0`
