@@ -74,5 +74,9 @@ For advanced users, you can use any tilde from [Tilderverse](https://tildeverse.
 ## Images
 
 ### Windows
-![Windows](https://github.com/Payre/pullfinger/assets/41021614/478588c1-705d-4348-8a1b-0f23cd37e326)
+![Windows](https://github.com/Payre/pullfinger/assets/41021614/1d30d277-fa83-43eb-8caa-aff0a07d3991)
+
+### Linux
+![Linux](https://github.com/Payre/pullfinger/assets/41021614/6f0b08e2-e98f-4124-8e68-230f29e7deac)
+
 
