@@ -59,3 +59,19 @@ cd pullfinger
 cat compile | sh
 ./pullfinger
 ```
+
+### Accessing Finger (protocol)
+You can open the book mark and paste any one of the url into the url bar.
+
+Alteratively you can copy this for a random people's finger plans:
+```
+finger random@happynetbox.com
+```
+
+If you are interested in hosting your own finger, we recommend checking out [Happynetbox](https://happynetbox.com/).
+For advanced users, you can use any tilde from [Tilderverse](https://tildeverse.org).
+
+## Images
+
+### Windows
+https://imgur.com/Xc6hJtU
