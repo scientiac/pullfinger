@@ -1,5 +1,4 @@
-#include "TextFileApp.h"
-
+//standard library
 #include <arpa/inet.h>
 #include <gtk/gtk.h>
 #include <iostream>
@@ -9,6 +8,9 @@
 #include <string>
 #include <sys/socket.h>
 #include <unistd.h>
+
+//custom library
+#include "TextFileApp.h"
 
 // Class responsible for fetching Finger information
 class FingerClient {
