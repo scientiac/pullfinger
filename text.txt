@@ -2,3 +2,4 @@ finger://tilde.team/scientiac
 finger://tilde.team/ben
 finger://tilde.team/lovetocode999
 finger://happynetbox.com/resilientrasa
+finger random@happynetbox.com
