@@ -27,4 +27,19 @@ Let’s put the Finger protocol in perspective by comparing it with the modern H
 
 In the digital realm of 2023, where modern protocols and secure connections are the norm, the idea of creating a Finger client might seem unconventional. However, the endeavor serves as a window into the past and a reminder of how far internet communication has come. Building a Finger client today isn’t about practicality; it’s about understanding the origins of online interaction, comparing it to modern security-focused protocols like HTTPS, and appreciating the historical context that has shaped our digital landscape. By delving into the development of a Finger client, we explore the evolution of networking and gain insights into the security measures that are now integral to our online interactions.
 
-# Installation guide
+# Installation Guide
+
+### Windows
+
+We highly suggest you to install [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) (WSLg) and you can continue the reset of the process as for Linux.
+
+Alternatively, you can install GTK library for Windows system and compile it. (Not recommended.)
+
+### Installation
+
+First install the required dependencies:
+
+
+```bash
+sudo apt install git gcc libgtk-3-dev  build-essential
+```
