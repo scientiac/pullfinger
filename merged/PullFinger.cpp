@@ -1,3 +1,5 @@
+#include "TextFileApp.h"
+
 #include <arpa/inet.h>
 #include <gtk/gtk.h>
 #include <iostream>
@@ -7,8 +9,6 @@
 #include <string>
 #include <sys/socket.h>
 #include <unistd.h>
-
-#include "TodoListWidget.h"
 
 // Class responsible for fetching Finger information
 class FingerClient {
@@ -161,17 +161,6 @@ public:
         "Enter 'finger user@host' or 'finger://host/user' and press Enter.");
     // Show all GUI elements
     gtk_widget_show_all(window);
-
-    // Todolist
-    // Create the sidebar
-    sidebar = gtk_box_new(GTK_ORIENTATION_VERTICAL, 10);
-
-    // Create and add the to-do list widget to the sidebar
-    todoListWidget = new TodoListWidget(sidebar);
-    gtk_container_add(GTK_CONTAINER(sidebar), todoListWidget->getWidget());
-
-    // Add the sidebar to the main layout
-    gtk_container_add(GTK_CONTAINER(vbox), sidebar);
   }
 
   // Start GTK main loop
@@ -184,10 +173,6 @@ private:
   GtkWidget *response_label;
   GtkWidget *scrolled_window;
   FingerClient fingerClient;
-
-  // Todolist
-  TodoListWidget *todoListWidget;
-  GtkWidget *sidebar; // Declare the sidebar
 
   // Update the response label with text
   void updateResponseLabel(const std::string &text) {
@@ -234,6 +219,7 @@ private:
 // Main function
 int main(int argc, char *argv[]) {
   FingerApp app;
+  /* TextFileApp textFileApp; */
   app.run();
   return 0;
 }
