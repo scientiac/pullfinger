@@ -219,7 +219,7 @@ private:
 // Main function
 int main(int argc, char *argv[]) {
   FingerApp app;
-  /* TextFileApp textFileApp; */
+  TextFileApp textFileApp;
   app.run();
   return 0;
 }
