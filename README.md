@@ -20,6 +20,8 @@ Let’s put the [Finger protocol](https://en.wikipedia.org/wiki/Finger_(protocol
         Security Measures: Utilizes digital certificates to verify the identity of servers and websites, enhancing trust and security.
         Usage: Widely employed for secure online transactions, protecting login credentials, and safeguarding sensitive data.
 
+For more info on why I built it visit [map.scientiac.space](https://map.scientiac.space/thoughts/gtk-finger-client/).
+
 # Installation Guide
 
 ### Windows
@@ -73,10 +75,10 @@ For advanced users, you can use any tilde from [Tilderverse](https://tildeverse.
 
 ## Images
 
-### Windows
-![Windows](https://github.com/Payre/pullfinger/assets/41021614/1d30d277-fa83-43eb-8caa-aff0a07d3991)
-
 ### Linux
 ![Linux](https://github.com/Payre/pullfinger/assets/41021614/6f0b08e2-e98f-4124-8e68-230f29e7deac)
+
+### Windows
+![Windows](https://github.com/Payre/pullfinger/assets/41021614/1d30d277-fa83-43eb-8caa-aff0a07d3991)
 
 
