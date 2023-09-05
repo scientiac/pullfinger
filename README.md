@@ -28,7 +28,7 @@ For more info on why I built it visit [map.scientiac.space](https://map.scientia
 
 We highly suggest you to install [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) (WSLg) and you can continue the reset of the process as for Linux.
 
-Alternatively, you can install GTK library for Windows system and compile it. (Not recommended.)
+Alternatively, you can install GTK dependencies for Windows and compile it. (Not recommended.)
 
 ### Installation
 
@@ -45,6 +45,7 @@ git clone https://github.com/andsnap/pullfinger
 
 ```bash
 cd pullfinger
+
 cat compile | sh
 #Alternatively 
 g++ -o pullfinger TextFileApp.cpp PullFinger.cpp `pkg-config --cflags --libs gtk+-3.0`
@@ -53,7 +54,18 @@ g++ -o pullfinger TextFileApp.cpp PullFinger.cpp `pkg-config --cflags --libs gtk
 ```bash
 ./pullfinger
 ```
-### Bonus
+
+5. Render it on a web browser. (Optional)
+Run:
+```bash
+broadwayd :5 & GDK_BACKEND=broadway BROADWAY_DISPLAY=:5 ./pullfinger
+```
+Then go to: `http://127.0.0.1:8085`
+
+
+### Tips
+
+1. Copy and paste this to your terminal to run directly.
 ```bash
 sudo apt install git gcc libgtk-3-dev  build-essential
 git clone https://github.com/andsnap/pullfinger
@@ -62,16 +74,25 @@ cat compile | sh
 ./pullfinger
 ```
 
-### Accessing Finger (protocol)
-You can open the book mark and paste any one of the url into the url bar.
+2. To switch between light and dark themes use the environment variable `GTK_THEME=Adwaita:dark` or `GTK_THEME=Adwaita:light` before running the application.
+```bash
+# For Dark Mode
+GTK_THEME=Adwaita:dark ./pullfinger
 
-Alteratively you can copy this for a random people's finger plans:
+# For Dark Mode on web browser.
+broadwayd :5 & GTK_THEME=Adwaita:dark GDK_BACKEND=broadway BROADWAY_DISPLAY=:5 ./pullfinger
+```
+
+### Accessing Finger (protocol)
+You can open the bookmark window and paste any one of the url into the url bar.
+
+Alteratively you can copy this for random people's finger plans:
 ```
 finger random@happynetbox.com
 ```
 
-If you are interested in hosting your own finger, we recommend checking out [Happynetbox](https://happynetbox.com/).
-For advanced users, you can use any tilde from [Tilderverse](https://tildeverse.org).
+If you are interested in hosting your own finger plan, we recommend checking out [Happynetbox](https://happynetbox.com/).
+For advanced users, you can make use of tildes. [Tilderverse](https://tildeverse.org)*.
 
 ## Images
 
@@ -81,4 +102,6 @@ For advanced users, you can use any tilde from [Tilderverse](https://tildeverse.
 ### Windows
 ![Windows](https://github.com/Payre/pullfinger/assets/41021614/1d30d277-fa83-43eb-8caa-aff0a07d3991)
 
+### Browser
+![Browser](https://cdn.discordapp.com/attachments/971741521843982387/1148434126395936849/image.png)
 
