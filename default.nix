@@ -6,6 +6,5 @@ stdenv.mkDerivation {
     gtk3
     pkgconfig
     gcc
-    libnotify
   ];
 }

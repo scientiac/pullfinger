@@ -77,8 +77,8 @@ public:
     if (fingerPos != std::string::npos) {
       std::string address = input.substr(fingerPos + 7);
       if (address.empty()) {
-        return "The address is invalid, use finger://example.com/user or "
                "example.com/user";
+        return "Invalid URL format!\n\nSupported URL Formats:\n\n 'finger user@host'\n 'finger://host/user'\n 'host/user'";
       }
 
       // Parse user and host
@@ -97,7 +97,7 @@ public:
       std::string hostUser = input.substr(schemePos + 3);
       size_t slashPos = hostUser.find('/');
       if (slashPos == std::string::npos) {
-        return "Invalid URL format.";
+        return "Invalid URL format!\n\nSupported URL Formats:\n\n 'finger user@host'\n 'finger://host/user'\n 'host/user'";
       }
       host = hostUser.substr(0, slashPos);
       user = hostUser.substr(slashPos + 1);
@@ -107,7 +107,7 @@ public:
       // Check for "host/user" format
       size_t slashPos = input.find('/');
       if (slashPos == std::string::npos) {
-        return "Invalid URL format.";
+        return "Invalid URL format!\n\nSupported URL Formats:\n\n 'finger user@host'\n 'finger://host/user'\n 'host/user'";
       }
       host = input.substr(0, slashPos);
       user = input.substr(slashPos + 1);
@@ -166,7 +166,7 @@ public:
 
     // Update initial response label
     updateResponseLabel(
-        "Enter 'finger user@host' or 'finger://host/user' and press Enter.");
+        "Supported URL Formats:\n\n 'finger user@host'\n 'finger://host/user'\n 'host/user'\n\n(Hit Enter to Process)");
     // Show all GUI elements
     gtk_widget_show_all(window);
   }

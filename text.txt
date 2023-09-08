@@ -1,8 +1,6 @@
 finger://tilde.team/scientiac
 finger://tilde.team/ben
-
-finger random@happynetbox.com
+finger b@happynetbox.com
 finger numberless@happynetbox.com
-
 tilde.team/lovetocode999
 tilde.team/savoy
