@@ -97,10 +97,10 @@ For advanced users, you can make use of tildes. [Tilderverse](https://tildeverse
 ## Images
 
 ### Linux
-![Linux](https://github.com/Payre/pullfinger/assets/41021614/6f0b08e2-e98f-4124-8e68-230f29e7deac)
+![Linux](https://cdn.discordapp.com/attachments/971741521843982387/1148338221500076144/image.png)
 
 ### Windows
-![Windows](https://github.com/Payre/pullfinger/assets/41021614/1d30d277-fa83-43eb-8caa-aff0a07d3991)
+![Windows](https://cdn.discordapp.com/attachments/971741521843982387/1148334139574071406/image.png)
 
 ### Browser
 ![Browser](https://cdn.discordapp.com/attachments/971741521843982387/1148434126395936849/image.png)
