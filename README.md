@@ -97,11 +97,5 @@ For advanced users, you can make use of tildes. [Tilderverse](https://tildeverse
 ## Images
 
 ### Linux
-![Linux](https://cdn.discordapp.com/attachments/971741521843982387/1148338221500076144/image.png)
-
-### Windows
-![Windows](https://cdn.discordapp.com/attachments/971741521843982387/1148334139574071406/image.png)
-
-### Browser
-![Browser](https://cdn.discordapp.com/attachments/971741521843982387/1148434126395936849/image.png)
+![Linux](image.png)
 
